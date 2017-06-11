@@ -57,8 +57,10 @@ header .row {
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-pack: distribute;
+      -webkit-justify-content: space-around;
       justify-content: space-around;
   /*навигация*/
 }
@@ -77,10 +79,12 @@ header .row ul {
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
+          -webkit-flex-direction: row-reverse;
           flex-direction: row-reverse;
   /*margin-right: 195px;*/
 }
@@ -117,9 +121,11 @@ article .slider-menu {
   height: 415px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   border-bottom: 4px solid #e54c2a;
   -ms-flex-pack: distribute;
+      -webkit-justify-content: space-around;
       justify-content: space-around;
 }
 article .slider-halls h1,
@@ -151,6 +157,7 @@ article .slider-menu h1 {
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .content-menu .red-menu {
@@ -223,12 +230,15 @@ article .slider-menu h1 {
   margin: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
+          -webkit-align-items: flex-end;
           align-items: flex-end;
   border-bottom: 1px solid #bebebe;
 }
@@ -266,20 +276,25 @@ article .slider-menu h1 {
 .raschet .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 .raschet .buttons .row-button {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 .raschet .buttons .button {
@@ -341,9 +356,11 @@ article .slider-menu h1 {
 .zayavka .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
   margin-top: 70px;
 }
@@ -476,31 +493,38 @@ footer .row {
   max-width: 950px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
+          -webkit-flex-direction: row-reverse;
           flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 footer .row .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
           flex-direction: column;
 }
 footer .row .footer-img {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
+          -webkit-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 footer .footer-food {
@@ -514,9 +538,11 @@ footer .footer-food ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 footer .footer-food ul li img:hover {
@@ -537,6 +563,7 @@ footer .footer-food ul li img:hover {
   bottom: 18px;
   text-align: center;
   -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 40px;
   -webkit-box-sizing: border-box;

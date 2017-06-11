@@ -2,7 +2,6 @@
 @grey: #f1f1f1;
 
 @font-face {
-
   font-family: "Philosopher-Regular";
   font-weight: normal;
   font-style: normal;
@@ -30,7 +29,6 @@
   url("../fonts/RobotoRegular.ttf") format("truetype"); }
 
 body {
-		flex();
 	margin: 0;
 	font-family: Philosopher-Regular, Arial, sans-serif;
 	background-color: @grey;
@@ -67,9 +65,7 @@ header {
 		width: 100%;
 		height: 80px;
 		display: flex;
-		display: -webkit-flex;
 		justify-content: space-around;
-		-webkit-justify-content: space-around;
 		/*навигация*/
 		.logo {
 			background: url(../img/logo.png);
@@ -85,9 +81,7 @@ header {
 			margin-top: 25px;
 			padding-left: 0;
 			display: flex;
-			display: -webkit-flex;
 			flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
 			/*margin-right: 195px;*/
 			.active>a {
 				color: @orange;
@@ -121,9 +115,7 @@ article {
 		max-width: 100%;
 		height: 415px;
 		display: flex;
-		display: -webkit-flex;
 		border-bottom: 4px solid @orange;
-		-webkit-justify-content: space-around;
 		justify-content: space-around;
 		h1 {
 			font-family: GoodVibesPro!important;
@@ -153,7 +145,6 @@ article {
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
-	display: -webkit-flex;
 	.red-menu {
 		width: 225px;
 		height: 540px;
@@ -222,11 +213,8 @@ article {
 				li {
 					margin: 0 30px;
 					display: flex;
-					display: -webkit-flex;
-					-webkit-justify-content: space-between;
 					justify-content: space-between;
 					align-items: flex-end;
-					-webkit-align-items: flex-end;
 					border-bottom: 1px solid darken(@grey, 20%);
 					.calc>a {
 						font-size: 28px;
@@ -265,17 +253,12 @@ article {
 	}
 	.buttons {
 		display: flex;
-		display: -webkit-flex;
 		flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
 		justify-content: space-between;
-		-webkit-justify-content: space-between;
 		.row-button {
 			width: 100%;
 			display: flex;
-			display: -webkit-flex;
 			justify-content: space-between;
-			-webkit-justify-content: space-between;
 		}
 		.button {
 			width: 350px;
@@ -336,9 +319,7 @@ article {
 		}
 		.inputs {
 			display: flex;
-			display: -webkit-flex;
 			justify-content: space-between;
-			-webkit-justify-content: space-between;
 			margin-top: 70px;
 			input {
 				width: 280px;
@@ -365,9 +346,6 @@ article {
 		margin-right: auto;
 		}
 		button:hover {
-					  -webkit-transition: all 0.5s ease;
-					  -moz-transition: all 0.5s ease;
-					  -o-transition: all 0.5s ease;
 					  transition: all 0.5s ease;
 						opacity: .85;
 				}
@@ -435,9 +413,6 @@ article {
 		cursor: pointer;
 	}
 	button:hover {
-					  -webkit-transition: all 0.5s ease;
-					  -moz-transition: all 0.5s ease;
-					  -o-transition: all 0.5s ease;
 					  transition: all 0.5s ease;
 						opacity: .85;
 				}
@@ -466,22 +441,15 @@ footer {
 			height: 100%;
 			max-width: 950px;
 			display: flex;
-			display: -webkit-flex;
 			flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
 			justify-content: space-between;
-			-webkit-justify-content: space-between;
 			.gallery {
 				display: flex;
-				display: -webkit-flex;
 				flex-direction: column;
-				-webkit-flex-direction: column;
 			}
 			.footer-img {
 				display: flex;
-				display: -webkit-flex;
 				flex-direction: row-reverse;
-				-webkit-flex-direction: row-reverse;
 			}
 	}
 	.footer-food {
@@ -493,14 +461,9 @@ footer {
 			margin: 0;
 			list-style: none;
 			display: flex;
-			display: -webkit-flex;
 			justify-content: space-between;
-			-webkit-justify-content: space-between;
 			li {
 				img:hover {
-					  -webkit-transition: all 0.3s ease;
-					  -moz-transition: all 0.3s ease;
-					  -o-transition: all 0.3s ease;
 					  transition: all 0.3s ease;
 					opacity: .45;
 				}
@@ -521,8 +484,6 @@ footer {
     right: 30px;
     bottom: 18px;
     text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 40px;
     box-sizing: border-box;
