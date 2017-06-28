@@ -258,17 +258,12 @@ h3 {
   }
 }
 @media screen and (max-width: 350px) {
-  #menu,
-  .skills,
-  .technology p {
+  #menu {
     display: none;
   }
-  .technology ul li {
-    font-size: 0px;
-    color: #363338;
-  }
   h1 {
-    font-size: 1.8em!important;
+    font-size: 2em!important;
+    padding-bottom: 10px;
   }
   h3 {
     font-size: 1.2em!important;
