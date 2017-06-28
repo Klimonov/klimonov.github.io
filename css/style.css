@@ -266,4 +266,10 @@ h3 {
   .technology ul li {
     font-size: 1px;
   }
+  h1 {
+    font-size: 1.5em!important;
+  }
+  h3 {
+    display: none;
+  }
 }
