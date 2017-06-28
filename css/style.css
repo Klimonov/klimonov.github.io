@@ -241,6 +241,9 @@ h3 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  h3 {
+    margin-bottom: 30px;
+  }
   .skills {
     margin-top: 10px;
   }
