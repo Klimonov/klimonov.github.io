@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:100');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  word-wrap: normal;
+  color: #1d9800;
+}
+h1,
+h3 {
+  font-size: 2.8em;
+  line-height: 110%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: #e8e8e8;
+  margin-bottom: 30px;
+}
+.wrapperSection1 {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.technology {
+  width: 600px;
+  margin-right: 60px;
+}
+.technology p {
+  text-transform: uppercase;
+  font-size: 1.1em!important;
+  text-align: left;
+  border-bottom: 2px solid;
+  width: 90%!important;
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  color: #ADE0F4!important;
+}
+.technology ul {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.technology ul li {
+  list-style: none;
+  color: #e8e8e8;
+  font-size: 0.8em;
+  width: 110px;
+}
+.technology img {
+  margin: 30px 30px 0 30px;
+}
+.skills {
+  width: 600px;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px 0 0 49px;
+}
+.skills ul li {
+  list-style-image: url(../img/icon_yes2.png);
+  color: #e8e8e8;
+  font-size: 1em;
+  line-height: 150%;
+  text-align: left;
+  width: 100%;
+}
+.skills p {
+  text-transform: uppercase;
+  font-size: 1.1em!important;
+  text-align: right;
+  border-bottom: 2px solid;
+  width: 90%!important;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  color: #C5A9E7!important;
+}
+h3 {
+  font-size: 1.6em;
+}
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+}
+.section {
+  text-align: center;
+}
+.intro p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #fff;
+}
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  /*background: #fff;*/
+}
+#menu .active {
+  color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+#menu li a {
+  text-decoration: none;
+  color: #e8e8e8;
+}
+#menu li .active a:hover {
+  color: #000;
+}
+#menu li:hover {
+  border-bottom: 1px solid #e8e8e8;
+}
+#menu li a,
+#menu li .active a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li .active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
