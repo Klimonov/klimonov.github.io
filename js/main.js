@@ -10,10 +10,14 @@ jQuery(document).ready(function() {
 
 // Табы на главной секции
 	$('.wrapperSection0>div').not(':first-of-type').hide();
-	$('.wrapperSection0>div').not(':first-of-type').hide();
 
 
-	$('.tab-menu li').each(function(i) {
+	$('.screen li').each(function(i) {
+
+		$(this).attr('data-tab', 'tab'+i);
+
+	});
+		$('.mobile li').each(function(i) {
 
 		$(this).attr('data-tab', 'tab'+i);
 
