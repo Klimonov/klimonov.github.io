@@ -24,30 +24,56 @@ h3 {
   color: #e8e8e8;
   margin-bottom: 30px;
 }
+.tab-menu {
+  position: relative;
+  width: 33%;
+  margin: 0 auto;
+}
+.tab-menu ul {
+  /*display: flex;*/
+}
+.tab-menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em!important;
+  border-bottom: 2px solid;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+}
+.tab-menu .active {
+  opacity: 1;
+  z-index: 0!important;
+}
+.tab-menu li:nth-child(odd) {
+  z-index: 1;
+  left: 0;
+  text-align: left;
+  margin: 0 auto;
+  color: #ADE0F4!important;
+}
+.tab-menu li:nth-child(even) {
+  z-index: 1;
+  right: 0;
+  text-align: right;
+  color: #C5A9E7!important;
+}
 .wrapperSection1 {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  /*padding: 0 150px 0 150px;*/
+  position: relative;
+  /*outline: 1px solid;*/
+  height: 350px;
+  width: 600px;
+  margin: 0 auto;
 }
 .technology {
+  position: absolute;
+  top: 30px;
   width: 600px;
-  /*margin-right: 60px;*/
-  outline: 1px solid;
-}
-.technology p {
-  text-transform: uppercase;
-  font-size: 1.1em!important;
-  text-align: left;
-  border-bottom: 2px solid;
-  width: 90%!important;
-  margin: 0 auto;
-  font-family: 'Roboto Condensed', Arial, sans-serif;
-  color: #ADE0F4!important;
+  /*height: 200px;*/
 }
 .technology ul {
   margin-top: 25px;
@@ -62,15 +88,18 @@ h3 {
   color: #e8e8e8;
   font-size: 0.8em;
   width: 60px;
-  outline: 1px solid;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 .technology img {
   /*margin: 30px 30px 0 30px;*/
   margin: 0 auto;
 }
 .skills {
+  position: absolute;
+  top: 30px;
+  left: 30px;
   width: 600px;
-  outline: 1px solid;
+  /*height: 200px;*/
 }
 .skills ul {
   display: -webkit-box;
@@ -82,36 +111,21 @@ h3 {
 }
 .skills ul li {
   list-style-image: url(../img/icon_yes2.png);
+  font-family: 'Roboto Condensed', Arial, sans-serif;
   color: #e8e8e8;
   font-size: 1em;
   line-height: 150%;
   text-align: left;
   width: 100%;
 }
-.skills p {
-  text-transform: uppercase;
-  font-size: 1.1em!important;
-  text-align: right;
-  border-bottom: 2px solid;
-  width: 90%!important;
-  font-family: 'Roboto Condensed', Arial, sans-serif;
-  color: #C5A9E7!important;
-}
 h3 {
   font-size: 1.6em;
-}
-p {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1em;
 }
 .section {
   text-align: center;
 }
 .intro p {
-  width: 50%;
   margin: 0 auto;
-  font-size: 1.5em;
-  color: #fff;
 }
 #menu li {
   display: inline-block;
@@ -136,6 +150,7 @@ p {
 #menu li .active a {
   padding: 9px 18px;
   display: block;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 #menu li .active a {
   color: #fff;
@@ -150,6 +165,74 @@ p {
   padding: 0;
   margin: 0;
 }
+/*Секция 1 Опыт работы*/
+#section1 h4,
+#section1 p {
+  text-align: left;
+}
+#section1 .wrapperSection1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#section1 .wrapperSection1 > div {
+  width: 450px;
+  margin-bottom: 40px;
+}
+#section1 .wrapperSection1 h4 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #e8e8e8;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 300;
+  /*margin-bottom: 30px;*/
+}
+#section1 .wrapperSection1 h4 span {
+  vertical-align: 2px;
+  font-size: .8em;
+  margin-left: 30px;
+  color: #fffcb2;
+}
+#section1 p {
+  margin-top: 20px;
+  /*font-weight: 100;*/
+  color: #e8e8e8;
+  font-size: 1.0em!important;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+#section1 p span {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+/*-------------Контакты---------*/
+#section2 h1 {
+  color: #303536;
+}
+#wrapperContacts1 {
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
+#wrapperContacts1 p {
+  display: inline-block;
+  margin-right: 30px;
+  color: #303536;
+  font-size: 1.0em!important;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+}
+#wrapperContacts1 p img {
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+#wrapperContacts2 {
+  margin-top: 20px;
+}
+#wrapperContacts2 a {
+  display: inline-block;
+  margin-right: 10px;
+}
+/*-------------МЕДИА-----------*/
 @media screen and (max-width: 826px) {
   .wrapperSection1 {
     -ms-flex-wrap: wrap;
