@@ -9,8 +9,8 @@ jQuery(document).ready(function() {
 	})
 
 // Табы на главной секции
-
-	$('.wrapperSection1 div').not(':first-of-type').hide();
+	$('.wrapperSection0>div').not(':first-of-type').hide();
+	$('.wrapperSection0>div').not(':first-of-type').hide();
 
 
 	$('.tab-menu li').each(function(i) {
@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 
 	});
 
-		$('.wrapperSection1 div').each(function(i) {
+		$('.wrapperSection0>div').each(function(i) {
 
 		$(this).attr('data-tab', 'tab'+i);
 
@@ -32,8 +32,8 @@ jQuery(document).ready(function() {
 		$('.tab-menu li').removeClass('active');
 		$(this).addClass('active');
 
-		$('.wrapperSection1 div').fadeOut(400);
-		$('.wrapperSection1 div[data-tab='+dataTab+']').fadeIn(400);
+		$('.wrapperSection0>div').fadeOut(400);
+		$('.wrapperSection0>div[data-tab='+dataTab+']').fadeIn(400);
 	});
 
 
