@@ -63,30 +63,33 @@ html.fp-enabled,
     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-top: -38px;
+    -ms-user-select: none;
+/*    width: 0;
+    height: 0;*/
+    /*border-style: solid;*/
+    margin-top: -15px;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    position: absolute;
+    z-index: 4;
+    top: 48%;
+    cursor: pointer;
 }
 .fp-controlArrow.fp-prev {
-    display: none;
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    left: 40px;
+    width: 60px;
+    height: 60px;
+    border-left: 5px solid #DEDFDF;
+    border-top: 5px solid #DEDFDF;
+    transform: rotate(-45deg);
 }
 .fp-controlArrow.fp-next {
-    display: none;
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    border-left: 5px solid #DEDFDF;
+    border-top: 5px solid #DEDFDF;
+    transform: rotate(135deg);
 }
 .fp-scrollable {
     overflow: hidden;

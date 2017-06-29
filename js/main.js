@@ -5,8 +5,48 @@ jQuery(document).ready(function() {
 		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		menu:'#menu',
 		navigation: true,
-		slidesNavigation: true,
-	})
+		slidesNavigation: false,
+		loopHorizontal: false,
+		loopBottom: true,
+		afterLoad: function (link) {
+			if (link == 'firstPage') {
+					$('#menu').delay(2800).animate({'left':'0%'}, 400);
+					$('#section0 h1').delay(400).animate({'margin-left':'0%', 'opacity':'1'}, 800);
+					$('#section0 h3').delay(1200).animate({'margin-right':'0%', 'opacity':'1'}, 800);
+					$('.wrapperSection0').delay(2000).animate({'opacity':'1'}, 800);
+					$('.intro>img').delay(3600).animate({'opacity':'0.3'}, 800);
+					
+			} 
+		}
+	});
+
+
+	// --------Самодельный скрол (недоработан)
+// 	var
+// 		screen = 0,
+// 		container = $('.maincontent'),
+// 		pages = $('.section'),
+// 		inscroll = false;
+
+// 	$('body').on('mousewhell', function(event) {
+
+// 			if (event.deltaY > 0) {
+// 				screen--;
+
+
+// 			} else {
+
+// 					screen++;
+
+// 			}
+
+// 			var position = (-screen * 100) + '%';
+// console.log(position);
+// 				container.css('top', '100');
+
+// 	});
+
+
 
 // Табы на главной секции
 	$('.wrapperSection0>div').not(':first-of-type').hide();
@@ -29,16 +69,17 @@ jQuery(document).ready(function() {
 
 	});
 
-	$('.tab-menu li').on('click', function() {
 
-		var dataTab = $(this).data('tab');
+				$('.tab-menu li').on('click', function() {
 
-		$('.tab-menu li').removeClass('active');
-		$(this).addClass('active');
+				var dataTab = $(this).data('tab');
 
-		$('.wrapperSection0>div').fadeOut(400);
-		$('.wrapperSection0>div[data-tab='+dataTab+']').fadeIn(400);
-	});
+				$('.tab-menu li').removeClass('active');
+				$(this).addClass('active');
 
+				$('.wrapperSection0>div').fadeOut(400);
+				$('.wrapperSection0>div[data-tab='+dataTab+']').fadeIn(400);
+			});
+					
 
 });
