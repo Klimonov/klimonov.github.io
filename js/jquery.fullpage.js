@@ -1866,7 +1866,7 @@
             $('#space').click(function(){
               $(this).data('clicked', true);
               if ($('#space').data('clicked')) {
-                moveSectionDown();
+                moveTo(1);
             }
             });
         /**
@@ -1882,12 +1882,14 @@
                 $('.skillsTab').addClass('active');
                 $('.technology').fadeOut(400);
                 $('.skills').fadeIn(400);
-            } else if (e.which == 37) {
-                $('.technoTab').addClass('active');
+            } 
+            else if (e.which == 37 && isScrollAllowed.k.left) {
+                        $('.technoTab').addClass('active');
                 $('.skillsTab').removeClass('active');
                 $('.technology').fadeIn(400);
                 $('.skills').fadeOut(400);
             } 
+
             //do nothing if we can not scroll or we are not using horizotnal key arrows.
             if(!canScroll && [37,39].indexOf(e.which) < 0){
                 return;
@@ -1904,10 +1906,10 @@
 
                 //down
                 case 32: //spacebar
-                    if(shiftPressed && isScrollAllowed.k.up){
-                        moveSectionUp();
+                    
+                        moveTo(1);
                         break;
-                    }
+                    
                 /* falls through */
                 case 40:
                 case 34:
@@ -1934,9 +1936,8 @@
                 case 37:
                     if(isScrollAllowed.k.left){
                         moveSlideLeft();
-                    }
+                    } 
                     break;
-
                 //right
                 case 39:
                     if(isScrollAllowed.k.right){

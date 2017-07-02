@@ -256,16 +256,17 @@ border-bottom: 1px solid #e8e8e8;
 
 /*Секция 1 Опыт работы*/
 #section1  {
-	h4, p {
-		text-align: left;
-	}
-	.wrapperSection1 {
+			h4, p {
+					text-align: left;
+			}
+
+	.wrapperSection1, .wrapperSection2 {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		>div {
-			width: 450px;
 			margin-bottom: 40px;
+			width: 450px;
 		}
 		h4 {
 		text-transform: uppercase;
@@ -282,6 +283,7 @@ border-bottom: 1px solid #e8e8e8;
 			}
 		}	
 	}
+
 	p {
 		margin-top: 20px;
     /*font-weight: 100;*/
@@ -295,8 +297,16 @@ border-bottom: 1px solid #e8e8e8;
     }
 	}
 }
-.fp-controlArrow {
-	// background-color: red;
+
+.wrapperSection2 {
+	flex-direction: column;
+	div {
+		margin: 0 auto;
+		width: 700px!important;
+	}
+}
+#slide2 h1 {
+	margin-bottom: 5%;	
 }
 
 

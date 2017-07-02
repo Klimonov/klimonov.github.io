@@ -200,16 +200,19 @@ h3 {
 #section1 p {
   text-align: left;
 }
-#section1 .wrapperSection1 {
+#section1 .wrapperSection1,
+#section1 .wrapperSection2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#section1 .wrapperSection1 > div {
-  width: 450px;
+#section1 .wrapperSection1 > div,
+#section1 .wrapperSection2 > div {
   margin-bottom: 40px;
+  width: 450px;
 }
-#section1 .wrapperSection1 h4 {
+#section1 .wrapperSection1 h4,
+#section1 .wrapperSection2 h4 {
   text-transform: uppercase;
   font-size: 1.3em;
   color: #e8e8e8;
@@ -217,7 +220,8 @@ h3 {
   font-weight: 300;
   /*margin-bottom: 30px;*/
 }
-#section1 .wrapperSection1 h4 span {
+#section1 .wrapperSection1 h4 span,
+#section1 .wrapperSection2 h4 span {
   vertical-align: 2px;
   font-size: .8em;
   margin-left: 30px;
@@ -234,6 +238,16 @@ h3 {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
+}
+.wrapperSection2 {
+  flex-direction: column;
+}
+.wrapperSection2 div {
+  margin: 0 auto;
+  width: 700px!important;
+}
+#slide2 h1 {
+  margin-bottom: 5%;
 }
 /*-------------Контакты---------*/
 #section2 h1 {

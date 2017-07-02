@@ -4,10 +4,10 @@ jQuery(document).ready(function() {
 		sectionsColor:['#363338', '#6E857D', '#756F68', '#979C93'],
 		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		menu:'#menu',
-		navigation: true,
+		navigation: false,
 		slidesNavigation: false,
 		loopHorizontal: false,
-		loopBottom: true,
+		loopBottom: false,
 		afterLoad: function (link) {
 			if (link == 'firstPage') {
 					$('#menu').delay(2800).animate({'left':'0%'}, 400);
@@ -15,11 +15,9 @@ jQuery(document).ready(function() {
 					$('#section0 h3').delay(1200).animate({'margin-right':'0%', 'opacity':'1'}, 800);
 					$('.wrapperSection0').delay(2000).animate({'opacity':'1'}, 800);
 					$('.intro>img').delay(3600).animate({'opacity':'0.3'}, 800);
-					
-			} 
+					} 
 		}
 	});
-
 
 	// --------Самодельный скрол (недоработан)
 // 	var
@@ -80,6 +78,6 @@ jQuery(document).ready(function() {
 				$('.wrapperSection0>div').fadeOut(400);
 				$('.wrapperSection0>div[data-tab='+dataTab+']').fadeIn(400);
 			});
-					
+
 
 });
