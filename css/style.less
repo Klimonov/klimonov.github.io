@@ -57,7 +57,7 @@ h1 {
 }
 
 h3 {
-	margin-bottom: 80px;
+	margin-bottom: 4%;
 }
 
 #section0 h1 {
@@ -193,7 +193,12 @@ h3 {
 	}
 
 }
-
+.intro {
+	padding: 10px;
+	p {
+			margin: 0 auto;
+	}
+}
 
 h3 {
 	font-size: 1.6em;
@@ -201,10 +206,6 @@ h3 {
 
 .section {
 	text-align: center;
-}
-
-.intro p {
-	margin: 0 auto;
 }
 
 #menu li {
@@ -265,8 +266,10 @@ border-bottom: 1px solid #e8e8e8;
 		flex-wrap: wrap;
 		justify-content: center;
 		>div {
+			box-sizing: border-box;
+			margin: 5px;
 			margin-bottom: 40px;
-			width: 450px;
+			width: 30%;
 		}
 		h4 {
 		text-transform: uppercase;
@@ -299,10 +302,11 @@ border-bottom: 1px solid #e8e8e8;
 }
 
 .wrapperSection2 {
-	flex-direction: column;
-	div {
-		margin: 0 auto;
-		width: 700px!important;
+	/*flex-direction: column;*/
+	>div {
+		/*display: inline-block!important;*/
+		/*margin: 0 auto!important;*/
+		width: 50%!important;
 	}
 }
 #slide2 h1 {
@@ -370,7 +374,9 @@ h3 {
 
 }
 @media screen and (max-width: 350px){
-
+	.intro>img {
+		display: none;
+	}
 	#menu{
 		display: none;
 	}
@@ -384,7 +390,7 @@ h3 {
 	}
 h3 {
 	font-size: 1.2em!important;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 .mobile {
 		display: block;
