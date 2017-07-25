@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
 ymaps.ready(function() {
       var geolocation = ymaps.geolocation;
 
-      alert("Ваш город: " + geolocation.city); //geolocation.region, geolocation.country
+      alert("Ваш город: " + geolocation.region); //geolocation.region, geolocation.country
 });
 
 
