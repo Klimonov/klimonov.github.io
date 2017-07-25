@@ -18,6 +18,13 @@ jQuery(document).ready(function() {
 					} 
 		}
 	});
+// ----------------- Определение геолокации
+ymaps.ready(function() {
+      var geolocation = ymaps.geolocation;
+
+      alert("Ваш город: " + geolocation.city); //geolocation.region, geolocation.country
+});
+
 
 	// --------Самодельный скрол (недоработан)
 // 	var
