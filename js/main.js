@@ -19,11 +19,11 @@ jQuery(document).ready(function() {
 		}
 	});
 // ----------------- Определение геолокации
-ymaps.ready(function() {
-      var geolocation = ymaps.geolocation;
+// ymaps.ready(function() {
+//       var geolocation = ymaps.geolocation;
 
-      alert("Ваш город: " + geolocation.region); //geolocation.region, geolocation.country
-});
+//       alert("Ваш город: " + geolocation.region); //geolocation.region, geolocation.country
+// });
 
 
 	// --------Самодельный скрол (недоработан)
