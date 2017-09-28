@@ -22,10 +22,15 @@
 <script type="text/javascript" src="js/easing.js"></script>
 				<script type="text/javascript">
 					jQuery(document).ready(function($) {
-						$(".scroll").click(function(event){		
+						$(".scroll").click(function(event){
 							event.preventDefault();
 							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 						});
+							function blinker() {
+					    $('.blinker').fadeOut(500);
+					    $('.blinker').fadeIn(500);
+							}
+							setInterval(blinker, 1000);
 					});
 					</script>
 </head>
@@ -34,7 +39,9 @@
 	<div class="header" id="home">
 		<div class="container">	
 			<div class="logo">
-				<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+				<h1>Климонов <br>Кирилл  < /><span class="blinker"></span></h1>
+				<p>Web developer</p>
+				
 			</div>
 			<div class="header-bottom">
 				<div class="top-nav">
@@ -64,7 +71,7 @@
 	<div class="container">		
 		<div class="banner">
 			<div class="banner-matter">
-				<h2>Веб разработчик</h2>
+				<h2>Веб разработка</h2>
 				<p>Кроссбраузерная, адаптивная и валидная вёрстка с использованием современных веб технологий.</p>		
 			 </div>
 			<div class="tv">
@@ -99,18 +106,18 @@
 									  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Все</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Верстка</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Функционал</span></li>
-									  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Задачи</span></li>
 <!-- 									  <li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>design</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-5" role="tab"><span>type</span></li> -->
 									  <div class="clearfix"></div>
 								  </ul>	
 									<div class="clearfix"></div>								  
+									<!-- ВСЕ -->
 								<div class="resp-tabs-container">
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="tab_img">
 												<div class="col-md-4 img-top ">
 												   <span rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi.jpg" alt=""/>
+													<img src="images/1.png" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
 																<span>Салон эротического массажа</span>	
@@ -126,11 +133,11 @@
 												</div>
 												<div class="col-md-4 img-top ">
 												   <span rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi1.jpg" alt=""/>
+													<img src="images/2.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
 																<span>Образовательный центр для детей</span>	
-																<a target="_blank" href="http://klimonov.ru/galileo">								
+																<a target="_blank" href="http://school.stavropolshow.ru/">								
 																<button>Открыть</button>
 															</a>
 															<a target="_blank" href="https://github.com/Klimonov/galileo">								
@@ -142,14 +149,14 @@
 												</div>
 												<div class="col-md-4 img-top ">
 												   <span rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi.jpg" alt=""/>
+													<img src="images/3.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Салон эротического массажа</span>	
-																<a href="http://klimonov.ru/zhara">								
+																<span>Семейное кафе Абажур</span>	
+																<a target="_blank"  href="http://klimonov.ru/abajur">								
 																<button>Открыть</button>
 															</a>
-															<a href="https://github.com/Klimonov/zhara">								
+															<a target="_blank"  href="https://github.com/Klimonov/abajur">								
 																<button>Github</button>
 															</a>
 															</h2>
@@ -157,168 +164,170 @@
 												   </span>
 												</div>
 												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi3.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/4.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Гироскутеры Лидерспорт</span>	
+																<a target="_blank"  href="http://gyro.lidsport.ru/">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="http://klimonov.ru/gyro.lidsport.ru/">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
+												   </span>
 												</div>
 												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi4.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/5.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Spirit8</span>	
+																<a target="_blank"  href="http://klimonov.ru/spirit8">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="https://github.com/Klimonov/spirit8">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
+												   </span>
 												</div>
 												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi5.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/6.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Уроки фортепиано</span>	
+																<a target="_blank"  href="http://barsamova.tk/">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="https://github.com/Klimonov/piano">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
+												   </span>
 												</div>
 												<div class="clearfix"></div>	
 										</div>
-																			 
+										<!-- ВЕРСТКА -->
 									</div>
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
 										<div class="tab_img">
 												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi4.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/2.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Образовательный центр для детей</span>	
+																<a target="_blank" href="http://school.stavropolshow.ru/">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank" href="https://github.com/Klimonov/galileo">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
+												   </span>
 												</div>
 												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi5.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/5.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Spirit8</span>	
+																<a target="_blank"  href="http://klimonov.ru/spirit8">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="https://github.com/Klimonov/spirit8">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
-												</div>	
+												   </span>
+												</div>
+												<div class="col-md-4 img-top ">
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/3.jpg" alt=""/ width="350" height="255">
+														<div class="b-wrapper">
+															<h2 class="b-animate b-from-left ">	
+																<span>Семейное кафе Абажур</span>	
+																<a target="_blank"  href="http://klimonov.ru/abajur">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="https://github.com/Klimonov/abajur">								
+																<button>Github</button>
+															</a>
+															</h2>
+														</div>
+												   </span>
+												</div>
 												
 												<div class="clearfix"></div>	
 										</div>	 	        					 
 									</div>
+									
+
+									<!-- ФУНКЦИОНАЛ -->
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
 										<div class="tab_img">
 											<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi1.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/1.png" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Салон эротического массажа</span>	
+																<a target="_blank" href="http://klimonov.ru/zhara">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank" href="https://github.com/Klimonov/zhara">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
+												   </span>
 												</div>
 												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi2.jpg" class="img-responsive" alt=""/>
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/4.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Гироскутеры Лидерспорт</span>	
+																<a target="_blank"  href="http://gyro.lidsport.ru/">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="http://klimonov.ru/gyro.lidsport.ru/">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
+												   </span>
 												</div>
-												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi3.jpg" class="img-responsive" alt=""/>
+											<div class="col-md-4 img-top ">
+												   <span rel="title" class="b-link-stripe b-animate-go">
+													<img src="images/6.jpg" alt=""/ width="350" height="255">
 														<div class="b-wrapper">
 															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
+																<span>Уроки фортепиано</span>	
+																<a target="_blank"  href="http://barsamova.tk/">								
+																<button>Открыть</button>
+															</a>
+															<a target="_blank"  href="https://github.com/Klimonov/piano">								
+																<button>Github</button>
+															</a>
 															</h2>
 														</div>
-												   </a>
-												</div>	
+												   </span>
+												</div>
 												<div class="clearfix"></div>
 										</div>		        					 
 									</div>
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-										<div class="tab_img">
-												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi2.jpg" class="img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
-															</h2>
-														</div>
-												   </a>
-												</div>
-												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi3.jpg" class="img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
-															</h2>
-														</div>
-												   </a>
-												</div>	
-												<div class="clearfix"></div>
-										</div>	
-											
-									</div>
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
-										<div class="tab_img">
-												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi.jpg" class="img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
-															</h2>
-														</div>
-												   </a>
-												</div>
-												<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-5">
-										<div class="tab_img">
-												<div class="col-md-4 img-top ">
-												   <a href="single.html" rel="title" class="b-link-stripe b-animate-go">
-													<img src="images/pi5.jpg" class="img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<h2 class="b-animate b-from-left ">	
-																<span>Photo</span>									
-																<button>View photo</button>
-															</h2>
-														</div>
-												   </a>
-												</div>
-												<div class="clearfix"></div>
-										</div>
-									</div>
+
+									
+									
 								</div>	
 							</div>
 						</div>
@@ -420,50 +429,51 @@
 			<!-- -->
 		<div class="container" id="blog">
 			<div class="meet">
-				<div class=" team-top">									
+				<div class="col-md-6 blog-top">
+				<div class="top-blog">		
+
 					<h3 class="team">Опыт работы</h3>
-					<p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
 					<div class="clearfix"> </div>
 				</div>
-				<div class=" team-grid">
-					<div class="col-md-4 grid-team">
-						<img class="img-responsive" src="images/me.png" alt=" ">
-						<h4>ВЕБ РЕСУРС</h4>
-						<h5>Веб разработчик</h5>
-						<p>Разработка сайтов: верстка и фунционал.</p>
-						<ul class="social-in">
-								<li><a href="#"><i> </i></a></li>						
-								<li><a href="#"><i class="thumblr"> </i></a></li>
-								<li><a href="#"><i class="pin"> </i></a></li>
-								
-							</ul>
-					</div>
-					<div class="col-md-4  grid-team">
-						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-						<h4>ЛИДЕР СПОРТ</h4>
-						<h5>Веб разработчик</h5>
-						<p>Развитие и поддержка сайтов фирмы.</p>
-						<ul class="social-in">
-								<li><a href="#"><i> </i></a></li>						
-								<li><a href="#"><i class="thumblr"> </i></a></li>
-								<li><a href="#"><i class="pin"> </i></a></li>
-								
-							</ul>
-					</div>
-					<div class="col-md-4  grid-team">
-						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-						<h4>КЕВЛАР</h4>
-						<h5>Инженер</h5>
-						<p>Развитие и поддержка сайтов фирмы.</p>
-						<ul class="social-in">
-								<li><a href="#"><i> </i></a></li>						
-								<li><a href="#"><i class="thumblr"> </i></a></li>
-								<li><a href="#"><i class="pin"> </i></a></li>
-								
-							</ul>
-					</div>		
-				<div class="clearfix"> </div>
-			</div>
+
+				<div class="col-md-10 blog-top">
+					<h4>Веб ресурс</h4><span>2016 - н.в.</span>
+					<div class="clearfix"> </div>
+					<p>Веб разработчик</p>
+					
+				</div>
+				
+							<div class="col-md-10 blog-top">
+					<h4>Лидерспорт</h4><span>2017 - н.в.</span>
+					<div class="clearfix"> </div>
+					<p>Веб разработчик</p>
+				</div>
+			<div class="clearfix"> </div>
+		</div>
+		
+<div class="col-md-6 blog-top">
+				<div class="top-blog">									
+					<h3 class="team">Образование</h3>
+					<div class="clearfix"> </div>
+				</div>
+
+			
+				<div class="col-md-10 blog-top">
+					<h4>СГАУ</h4><span>2006 - 2009</span>
+					<div class="clearfix"> </div>
+					<p>Прикладная информатика.</p>
+				</div>
+							<div class="col-md-10 blog-top">
+					<h4>Колледж связи им.Петрова</h4><span>2002 - 2006</span>
+					<div class="clearfix"> </div>
+					<p>Программное обеспечение вычислительной техники и автоматизированных систем. Техник-программист.</p>
+				</div>
+				</div>
+				</div>
+			<div class="clearfix"> </div>
+		</div>		
+	</div>
+	</div>
 		</div>
 	</div>
 			<!---->

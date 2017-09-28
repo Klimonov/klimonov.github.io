@@ -537,7 +537,7 @@ a.read:hover {
 	background: #68C9AC;
 }
 .top-blog {
-	padding: 1em 0px;
+	padding: 3em 0 5em 0;
 }
 /*--contact--*/
 .contact-inline p{
@@ -1472,4 +1472,48 @@ a.read {
     font-size: 1.3em;
     font-weight: 700;
     margin: 10px 0 30px 0;
+}
+#blog {
+	padding-bottom: 5em;
+}
+#blog h4 {
+	float: left;
+}
+#blog span {
+	float: right;
+}
+.logo h1 {
+text-transform: uppercase;
+color: #279f7c;
+font-weight: 600;
+font-size: 2em;
+}
+.logo p {
+	color: #8e8e8e;
+	font-size: 1.4em;
+	letter-spacing: 2.5px;
+}
+.blinker {
+    position: relative;
+}
+.blinker:before {
+    width: 2.5px;
+    height: 22px;
+    margin-top: 4px;
+    left: 5px;
+    position: absolute;
+    content: '';
+    background-color: #279f7c;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
