@@ -1544,4 +1544,7 @@ font-size: 2em;
 .meet {
     padding: 0;
 }
+.sed {
+	display: none;
+}
 }
