@@ -537,7 +537,7 @@ a.read:hover {
 	background: #68C9AC;
 }
 .top-blog {
-	padding: 3em 0 5em 0;
+	padding: 3em 0 3em 0;
 }
 /*--contact--*/
 .contact-inline p{
@@ -1476,11 +1476,15 @@ a.read {
 #blog {
 	padding-bottom: 5em;
 }
+#blog img {
+	margin: -15px 10px 0 0;
+}
 #blog h4 {
 	float: left;
 }
 #blog span {
-	float: right;
+	margin-left: 22px;
+	color: #279f7c;
 }
 .logo h1 {
 text-transform: uppercase;
