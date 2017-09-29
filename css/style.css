@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	display:inline-block;
 }
 .technology {
-	width: 65%;
+	/*width: 65%;*/
 	margin: auto;
 }
 .technology ul li {
