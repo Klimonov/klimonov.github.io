@@ -1521,3 +1521,19 @@ font-size: 2em;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+@media screen and (max-width:768px) {
+	.top-blog {
+    padding: 3em 0 3em 0;
+}
+.team {
+	text-align: center;
+	float: inherit;
+}
+#blog span {
+    margin-left: 0px;
+    display: block;
+}
+#blog {
+    padding-bottom: 2em;
+}
+}
