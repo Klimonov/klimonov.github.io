@@ -516,7 +516,7 @@ ul.social-in li a i.pin:hover{
 }
 /*---*/
 .blog {
-	padding: 2em 0 4em;
+	padding: 4em 0 4em;
 }
 .blog-top p {
 	font-size: 1.1em;
@@ -1473,18 +1473,25 @@ a.read {
     font-weight: 700;
     margin: 10px 0 30px 0;
 }
-#blog {
-	padding-bottom: 5em;
+.blog {
+	text-align: left;
 }
-#blog img {
-	margin: -15px 10px 0 0;
+.blog p {
+	width: 100%;
+	margin-bottom: 20px;
 }
-#blog h4 {
-	float: left;
+.blog a {
+	text-decoration: none;
 }
-#blog span {
-	margin-left: 22px;
+.blog h5:hover {
 	color: #279f7c;
+	animation-duration: 1s;
+}
+.blog span {
+	color: #279f7c;
+}
+.blog img {
+	margin-bottom: 1em;
 }
 .logo h1 {
 text-transform: uppercase;
@@ -1528,13 +1535,6 @@ font-size: 2em;
 .team {
 	text-align: center;
 	float: inherit;
-}
-#blog span {
-    margin-left: 5px;
-    display: block;
-}
-#blog {
-    padding-bottom: 0;
 }
 .meet {
     padding: 0;
