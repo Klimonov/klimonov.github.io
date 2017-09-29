@@ -1473,6 +1473,9 @@ a.read {
     font-weight: 700;
     margin: 10px 0 30px 0;
 }
+.study {
+	padding-left: 8em;
+}
 .blog {
 	text-align: left;
 }
@@ -1546,5 +1549,8 @@ font-size: 2em;
 }
 .sed {
 	display: none;
+}
+.study {
+	padding-left: 15px;
 }
 }
