@@ -1484,8 +1484,13 @@ a.read {
 	text-decoration: none;
 }
 .blog h5:hover {
-	color: #279f7c;
-	animation-duration: 1s;
+	
+	    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    color: #279f7c;
 }
 .blog span {
 	color: #279f7c;
