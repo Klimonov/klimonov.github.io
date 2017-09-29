@@ -1530,10 +1530,13 @@ font-size: 2em;
 	float: inherit;
 }
 #blog span {
-    margin-left: 0px;
+    margin-left: 5px;
     display: block;
 }
 #blog {
-    padding-bottom: 2em;
+    padding-bottom: 0;
+}
+.meet {
+    padding: 0;
 }
 }
