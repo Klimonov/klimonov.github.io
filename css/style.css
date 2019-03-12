@@ -317,7 +317,7 @@ left: 114px;
 .b-from-left{
 	position: relative;
 	left: -100%;
-	background:rgba(39, 159, 124, 0.7);
+	background:rgba(39, 159, 124, 0.95);
 	background-size: 100% 100%;
 	top: 0px;
 	margin: 0;
